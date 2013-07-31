@@ -16,6 +16,8 @@ set(:run_method) { use_sudo ? :sudo : :run }
 # This is needed to correctly handle sudo password prompt
 default_run_options[:pty] = true
 
+ssh_options[:keys] = %w('~/.ssh/id_dsa.pub')
+
 set :user, "tomj"
 set :group, user
 set :runner, user
