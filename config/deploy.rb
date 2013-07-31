@@ -17,6 +17,7 @@ set(:run_method) { use_sudo ? :sudo : :run }
 default_run_options[:pty] = true
 
 ssh_options[:keys] = %w('~/.ssh/id_dsa.pub')
+set :ssh_options, { :forward_agent => true }
 
 set :user, "tomj"
 set :group, user
