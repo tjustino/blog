@@ -1,0 +1,9 @@
+source "https://rubygems.org"
+ruby "2.0.0"
+
+gem 'capistrano'
+gem 'capistrano-ext'
+
+gem "sinatra"
+gem "slim"
+gem "thin"
