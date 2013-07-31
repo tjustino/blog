@@ -6,4 +6,4 @@ gem 'capistrano-ext'
 
 gem "sinatra"
 gem "slim"
-gem "thin"
+gem "unicorn"
