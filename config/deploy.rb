@@ -1,38 +1,35 @@
+# https://help.github.com/articles/deploying-with-capistrano
 require "bundler/capistrano"
 
-set :application, "blog"
-set :repository,  "git@github.com:tjustino/blog.git"
-
-set :scm, :git
-
+# rbenv
 set :default_environment, {
   'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 }
 
-# do not use sudo
-set :use_sudo, false
-set(:run_method) { use_sudo ? :sudo : :run }
-
-# This is needed to correctly handle sudo password prompt
-default_run_options[:pty] = true
-
-ssh_options[:keys] = %w('~/.ssh/id_dsa.pub')
-set :ssh_options, { :forward_agent => true }
+set :application, "blog"
+set :domain, "justino.fr"
+set :deploy_to, "$HOME/www/#{application}"
 
 set :user, "tomj"
-set :group, user
-set :runner, user
+set :use_sudo, false
 
-set :host, "#{user}@justino.fr" # We need to be able to SSH to that box as this user.
-role :web, host
-role :app, host
+set :scm, "git"
+set :repository, "git@github.com:tjustino/blog.git"
+set :branch, "master"
+set :deploy_via, :remote_cache
 
-set :rack_env, :production
+default_run_options[:pty] = true # Must be set for the password prompt from git to work
+set :ssh_options, { :forward_agent => true } # Agent Forwarding
+ssh_options[:keys] = %w('~/.ssh/id_dsa.pub')
 
-# Where will it be located on a server?
+role :app, domain
+role :web, domain
+
+# variables
 set :deploy_to, "/home/tomj/www/#{application}"
 set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
 set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
+set :rack_env, :production
 
 # Unicorn control tasks
 namespace :deploy do
