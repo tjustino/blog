@@ -1,18 +1,8 @@
 body {
-  font-family: 'Fauna One', serif;
-  color: #2B264A;
-  
   background-image: url(../images/background.jpg);
-  background-color: #F6F6F6;
-
-  margin: 80px auto;
-  width: 550px;
+  text-align : justify;
 }
 
-section {
-  margin: 5ex 0;
-}
-
-article {
-  margin: 5em 0;
+.container {
+  margin-top: 100px;
 }
