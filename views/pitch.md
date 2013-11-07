@@ -2,8 +2,8 @@ Salut, je m'appelle Thomas JUSTINO.
 
 Depuis 2008, je travaille comme chef de projet informatique et comme responsable
 de l'exploitation du SI de gestion de l'[Inria](http://www.inria.fr/). Mon
-quotidien est peuplé d'[Oracle E-Business Suite](http://www.oracle.com/fr/products/applications/ebusiness/overview/index.html)
-, [Astre](http://www.gfi.fr/collectivites/rh_astre_rh.php), 
+quotidien est peuplé d'[Oracle E-Business Suite](http://www.oracle.com/fr/products/applications/ebusiness/overview/index.html), 
+[Astre](http://www.gfi.fr/collectivites/rh_astre_rh.php), 
 [KDS](http://www.kds.com/), [Itesoft](http://www.itesoft.fr/), bien d'autres
 progiciels moins connus et de plusieurs développements internes pour gérer la 
 tuyauterie entre tout ce petit monde.
