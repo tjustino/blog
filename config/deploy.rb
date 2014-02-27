@@ -20,7 +20,7 @@ set :deploy_via, :remote_cache
 
 default_run_options[:pty] = true # Must be set for the password prompt from git to work
 set :ssh_options, { :forward_agent => true } # Agent Forwarding
-ssh_options[:keys] = %w('~/.ssh/id_dsa.pub')
+ssh_options[:keys] = %w('~/.ssh/id_rsa.pub')
 
 role :app, domain
 role :web, domain
