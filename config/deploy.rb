@@ -1,47 +1,44 @@
-# https://help.github.com/articles/deploying-with-capistrano
-require "bundler/capistrano"
-
-# rbenv
-set :default_environment, {
-  'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
-}
+# config valid only for Capistrano 3.1
+lock "3.2.1"
 
 set :application, "blog"
-set :domain, "justino.fr"
-set :deploy_to, "$HOME/www/#{application}"
 
-set :user, "tomj"
-set :use_sudo, false
+# setup repo
+set :scm,       :git
+set :repo_url,  "git@github.com:tjustino/blog.git"
 
-set :scm, "git"
-set :repository, "git@github.com:tjustino/blog.git"
-set :branch, "master"
-set :deploy_via, :remote_cache
+# setup deploy details
+set :deploy_user, "tomj"
+set :deploy_to,   "/home/#{fetch(:deploy_user)}/www/#{fetch(:application)}"
 
-default_run_options[:pty] = true # Must be set for the password prompt from git to work
-set :ssh_options, { :forward_agent => true } # Agent Forwarding
-ssh_options[:keys] = %w('~/.ssh/id_rsa.pub')
+# setup ssh
+set :ssh_options, { forward_agent: true }
 
-role :app, domain
-role :web, domain
+# setup rbenv
+set :rbenv_type,      :user
+set :rbenv_ruby,      "2.1.2"
+set :rbenv_prefix,    "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
+set :rbenv_map_bins,  %w{rake gem bundle ruby}
 
-# variables
-set :deploy_to, "/home/tomj/www/#{application}"
-set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
-set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
-set :rack_env, :production
+# files/dirs we want symlinking to shared
+set :linked_dirs,   %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
-# Unicorn control tasks
+# how many old releases do we want to keep
+set :keep_releases, 5
+
 namespace :deploy do
-  task :restart do
-    run "if [ -f #{unicorn_pid} ]; then kill -USR2 `cat #{unicorn_pid}`; else cd #{current_path} && bundle exec unicorn -c #{unicorn_conf} -E #{rack_env} -D; fi"
+
+  COMMANDS = %w(start stop restart)
+
+  COMMANDS.each do |command|
+    task command do
+      on roles(:app), in: :sequence, wait: 5 do
+        within current_path do
+          execute :bundle, "exec thin #{command} -O --tag '#{fetch(:application)} #{fetch(:stage)}' -C config/thin/#{fetch(:stage)}.yml"
+        end
+      end
+    end
   end
 
-  task :start do
-    run "cd #{current_path} && bundle exec unicorn -c #{unicorn_conf} -E #{rack_env} -D"
-  end
-
-  task :stop do
-    run "if [ -f #{unicorn_pid} ]; then kill -QUIT `cat #{unicorn_pid}`; fi"
-  end
+  after :finishing, "deploy:cleanup"
 end
