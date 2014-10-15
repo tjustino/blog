@@ -15,6 +15,7 @@
   * un [niveau laser](http://www.amazon.fr/Bosch-lignes-adaptateur-fixation-0603663200/dp/B00911VJKY)
   * une [ponceuse excentrique](http://www.amazon.fr/Bosch-excentrique-PEX-300-AE/dp/B00507FK4O/ref=sr_1_4?s=hi&ie=UTF8&qid=1403263966&sr=1-4&keywords=ponceuse)
   * un [pistolet à colle](http://www.amazon.fr/Bosch-Pistolet-GluePen-chargeur-06032A2000/dp/B00CJ9ZI16/ref=sr_1_5?s=hi&ie=UTF8&qid=1403264073&sr=1-5&keywords=Bosch)
+  * une [grande échelle](http://www.leroymerlin.fr/recherche=%C3%A9chelle?pageTemplate=Recherche&resultOffset=0&resultLimit=50&resultListShape=SEARCHENGINE_PRODUCT_LIST_PLAIN&facet=PRODUCT&keyword=%C3%A9chelle&fcr=1&*4294965693=4294965693&*4294875018=4294875018&*15670=15670&*4294874999=4294874999#result-wrapper)
   * une pince à dénuder
   * un extracteur et lisseur de joints (qui tient la route)
   * des outils pratiques dont je ne connais même pas l’existence :)
@@ -54,5 +55,6 @@
 
 * _Cadeaux pour deux_ :
   * Un lave vaisselle
+  * Un petit frigo pour garder les boissons au frais (A+ minimum, of course !)
   * Un [poullailler](http://www.amazon.fr/s/ref=a9_sc_1?rh=i%3Aaps%2Ck%3Apoulailler&keywords=poulailler&ie=UTF8&qid=1409152399) (même fabriqué artisanalement !)
-  * 2 places d'opéra (bah oui ! je vais pas y aller tout seul quand même ^)
+  * 2 places d'opéra (bah oui ! je vais pas y aller tout seul quand même ^^)

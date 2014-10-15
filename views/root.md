@@ -32,4 +32,4 @@ Il m'arrive encore d'enfiler mes baskets pour faire du
 amateur, mais beaucoup moins qu'à une époque.
 
 Vous pouvez entrer en contact avec moi par [mail](mailto:thomas@justino.fr)
-ou par [Twitter](https://twitter.com/ThomasJustino).
+ou via [Twitter](https://twitter.com/ThomasJustino).
