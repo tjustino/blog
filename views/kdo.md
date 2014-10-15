@@ -57,4 +57,5 @@
   * Un lave vaisselle
   * Un petit frigo pour garder les boissons au frais (A+ minimum, of course !)
   * Un [poullailler](http://www.amazon.fr/s/ref=a9_sc_1?rh=i%3Aaps%2Ck%3Apoulailler&keywords=poulailler&ie=UTF8&qid=1409152399) (même fabriqué artisanalement !)
+  * Un [thermostat connecté NETATMO by Starck](http://www.leroymerlin.fr/v3/p/produits/thermostat-connecte-netatmo-by-starck-e1400625228?queryredirect=a_fp_thermostat_connecte_netatmo_by_starck&numpage=1)
   * 2 places d'opéra (bah oui ! je vais pas y aller tout seul quand même ^^)
