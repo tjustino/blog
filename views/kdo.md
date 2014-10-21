@@ -36,6 +36,7 @@
   * L'aliéniste ~ Caleb Carr
   * Le seigneur des porcheries ~ Tristan Egolf, Rémy Lambrechts
   * La promesse de l'aube ~ Romain Gary
+  * Confidence africaine ~  Roger Martin de Gard
   * Influence et manipulation ~ Robert Cialdini
   * L'homme qui prenait sa femme pour un chapeau ~ d’Oliver Sacks
   * Savoir rédiger ~ Yann Le Lay
