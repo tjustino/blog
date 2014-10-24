@@ -46,7 +46,7 @@
 
 * _Jeux Wii U_ :
   * [Batman Arkham Origins](http://www.amazon.fr/Warner-Bros-Batman-Arkham-Origins/dp/B00CBEHWQS/ref=sr_1_113_title_0?s=videogames&ie=UTF8&qid=1406114538&sr=1-113)
-  * [Super Smash Bros](http://www.amazon.fr/Nintendo-Super-Smash-Bros/dp/B009FUZ6TG/ref=pd_bxgy_vg_img_z)
+  * [Super Smash Bros](http://www.amazon.fr/Super-Smash-Adaptateur-Manette-Gamecube/dp/B00O9QW4HS/ref=sr_1_3?ie=UTF8&qid=1414148954&sr=8-3&keywords=adaptateur+gamecube) (avec adaptateur manette Gamecube si possible)
   * [Watch Dogs](http://www.amazon.fr/Ubisoft-Watch-Dogs/dp/B00CL6T6GA/ref=sr_1_15_title_0?s=videogames&ie=UTF8&qid=1413901897&sr=1-15&keywords=Ubisoft)
   * [Bayonetta + Bayonetta 2](http://www.amazon.fr/Bayonetta-2-%C3%A9dition-sp%C3%A9ciale/dp/B00NBPD4NG/ref=sr_1_1?ie=UTF8&qid=1411657460&sr=8-1&keywords=bayonetta) (le bundle sinon rien !)
   * [Mass effect 3 - Edition spéciale](http://www.amazon.fr/Mass-effect-3-%C3%A9dition-sp%C3%A9ciale/dp/B009JLK5A6/ref=sr_1_38_title_0?s=videogames&ie=UTF8&qid=1406114464&sr=1-38)
