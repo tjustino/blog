@@ -27,7 +27,7 @@
   * [Batman The Dark Knight Returns](http://www.amazon.fr/Batman-Dark-Knight-Returns-Miller/dp/2365772919/ref=sr_1_1?s=books&ie=UTF8&qid=1409151193&sr=1-1&keywords=dark+knight) de Frank Miller
   * [Batman : Killing Joke](http://www.amazon.fr/Batman-Killing-Joke-Alan-Moore/dp/2365773478/ref=pd_sim_b_2?ie=UTF8&refRID=0NEQKJC5VVRVMVZFH79E) d’Alan Moore
   * [Batman année un](http://www.amazon.fr/BATMAN-ANN%C3%89E-UN-Frank-Miller/dp/2365771300/ref=sr_1_3?s=books&ie=UTF8&qid=1409229791&sr=1-3) de Frank Miller
-  * Tomes [3](http://www.amazon.fr/Notes-Tome-viande-cest-force/dp/2756017450/ref=sr_1_1?ie=UTF8&qid=1383304296&sr=8-1&keywords=Notes+boulet+Tome+3) et [5](http://www.amazon.fr/Notes-Tome-Quelques-minutes-avant/dp/2756023396/ref=sr_1_1?ie=UTF8&qid=1383304307&sr=8-1&keywords=Notes+boulet+Tome+5) des Notes de Boulet (avec dédicasse ^^)
+  * Tomes [3](http://www.amazon.fr/Notes-Tome-viande-cest-force/dp/2756017450/ref=sr_1_1?ie=UTF8&qid=1383304296&sr=8-1&keywords=Notes+boulet+Tome+3) et [5](http://www.amazon.fr/Notes-Tome-Quelques-minutes-avant/dp/2756023396/ref=sr_1_1?ie=UTF8&qid=1383304307&sr=8-1&keywords=Notes+boulet+Tome+5) des Notes de Boulet (avec dédicasse ça serait top ^^)
 
 ---
 
@@ -46,17 +46,14 @@
 
 * _Jeux Wii U_ :
   * [Batman Arkham Origins](http://www.amazon.fr/Warner-Bros-Batman-Arkham-Origins/dp/B00CBEHWQS/ref=sr_1_113_title_0?s=videogames&ie=UTF8&qid=1406114538&sr=1-113)
-  * [Super Smash Bros](http://www.amazon.fr/Super-Smash-Adaptateur-Manette-Gamecube/dp/B00O9QW4HS/ref=sr_1_3?ie=UTF8&qid=1414148954&sr=8-3&keywords=adaptateur+gamecube) (avec adaptateur manette Gamecube si possible)
   * [Watch Dogs](http://www.amazon.fr/Ubisoft-Watch-Dogs/dp/B00CL6T6GA/ref=sr_1_15_title_0?s=videogames&ie=UTF8&qid=1413901897&sr=1-15&keywords=Ubisoft)
   * [Bayonetta + Bayonetta 2](http://www.amazon.fr/Bayonetta-2-%C3%A9dition-sp%C3%A9ciale/dp/B00NBPD4NG/ref=sr_1_1?ie=UTF8&qid=1411657460&sr=8-1&keywords=bayonetta) (le bundle sinon rien !)
   * [Mass effect 3 - Edition spéciale](http://www.amazon.fr/Mass-effect-3-%C3%A9dition-sp%C3%A9ciale/dp/B009JLK5A6/ref=sr_1_38_title_0?s=videogames&ie=UTF8&qid=1406114464&sr=1-38)
   * [Assassin's Creed III](http://www.amazon.fr/Assassins-Creed-III-Wii-U/dp/B0054XMGVE/ref=sr_1_6?s=videogames&ie=UTF8&qid=1408966373&sr=1-6)
-  * [Darksiders II](http://www.amazon.fr/THQ-Darksiders-II/dp/B0054XMHCC/ref=pd_bxgy_vg_img_y) (si y'a plus rien)
 
 ---
 
 * _Divers_ :
-  * Album de Rodrigue _Spectaculaire diffus_ (format CD)
   * Lotion après-rasage Hugo Boss _Boss Bottled_
 
 ---
@@ -64,6 +61,4 @@
 * _Cadeaux pour deux_ :
   * Un lave vaisselle
   * Un petit frigo pour garder les boissons au frais (A+ minimum, of course !)
-  * Un [poullailler](http://www.amazon.fr/s/ref=a9_sc_1?rh=i%3Aaps%2Ck%3Apoulailler&keywords=poulailler&ie=UTF8&qid=1409152399) (même fabriqué artisanalement !)
-  * Un [thermostat connecté NETATMO by Starck](http://www.leroymerlin.fr/v3/p/produits/thermostat-connecte-netatmo-by-starck-e1400625228?queryredirect=a_fp_thermostat_connecte_netatmo_by_starck&numpage=1)
-  * 2 places d'opéra (bah oui ! je vais pas y aller tout seul quand même ^^)
+  * Un [poulailler](http://www.amazon.fr/s/ref=a9_sc_1?rh=i%3Aaps%2Ck%3Apoulailler&keywords=poulailler&ie=UTF8&qid=1409152399) (même fabriqué artisanalement !)
