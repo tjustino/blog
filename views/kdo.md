@@ -11,7 +11,6 @@
 ---
 
 * _Bricolage_ :
-  * une [perceuse à percussion](http://www.amazon.fr/Bosch-percussion-r%C3%A9gulation-%C3%A9lectronique-0603127000/dp/B00359F2UG/ref=sr_1_22?s=hi&ie=UTF8&qid=1403264073&sr=1-22&keywords=Bosch)
   * un [niveau laser](http://www.amazon.fr/Bosch-lignes-adaptateur-fixation-0603663200/dp/B00911VJKY)
   * une [ponceuse excentrique](http://www.amazon.fr/Bosch-excentrique-PEX-300-AE/dp/B00507FK4O/ref=sr_1_4?s=hi&ie=UTF8&qid=1403263966&sr=1-4&keywords=ponceuse)
   * un [pistolet à colle](http://www.amazon.fr/Bosch-Pistolet-GluePen-chargeur-06032A2000/dp/B00CJ9ZI16/ref=sr_1_5?s=hi&ie=UTF8&qid=1403264073&sr=1-5&keywords=Bosch)
@@ -32,6 +31,7 @@
 ---
 
 * _Romans et Sciences humaines (du poche, c'est très bien !)_ :
+  * Soumission ~ Michel Houellebecq
   * H.P. Lovecraft. Contre le monde, contre la vie ~ Michel Houellebecq
   * L'aliéniste ~ Caleb Carr
   * Le seigneur des porcheries ~ Tristan Egolf, Rémy Lambrechts
@@ -45,16 +45,10 @@
 ---
 
 * _Jeux Wii U_ :
-  * [Batman Arkham Origins](http://www.amazon.fr/Warner-Bros-Batman-Arkham-Origins/dp/B00CBEHWQS/ref=sr_1_113_title_0?s=videogames&ie=UTF8&qid=1406114538&sr=1-113)
   * [Watch Dogs](http://www.amazon.fr/Ubisoft-Watch-Dogs/dp/B00CL6T6GA/ref=sr_1_15_title_0?s=videogames&ie=UTF8&qid=1413901897&sr=1-15&keywords=Ubisoft)
   * [Bayonetta + Bayonetta 2](http://www.amazon.fr/Bayonetta-2-%C3%A9dition-sp%C3%A9ciale/dp/B00NBPD4NG/ref=sr_1_1?ie=UTF8&qid=1411657460&sr=8-1&keywords=bayonetta) (le bundle sinon rien !)
   * [Mass effect 3 - Edition spéciale](http://www.amazon.fr/Mass-effect-3-%C3%A9dition-sp%C3%A9ciale/dp/B009JLK5A6/ref=sr_1_38_title_0?s=videogames&ie=UTF8&qid=1406114464&sr=1-38)
   * [Assassin's Creed III](http://www.amazon.fr/Assassins-Creed-III-Wii-U/dp/B0054XMGVE/ref=sr_1_6?s=videogames&ie=UTF8&qid=1408966373&sr=1-6)
-
----
-
-* _Divers_ :
-  * Lotion après-rasage Hugo Boss _Boss Bottled_
 
 ---
 
