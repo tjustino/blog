@@ -53,6 +53,6 @@
 ---
 
 * _Cadeaux pour deux_ :
-  * Un lave vaisselle
+  * Un [thermostat d'ambiance Netatmo](http://www.amazon.fr/Netatmo-NTH01-EN-EU-Thermostat-pour-Smartphone/dp/B00GWKW8SY/ref=sr_1_3?s=hi&ie=UTF8&qid=1422978555&sr=1-3)
   * Un petit frigo pour garder les boissons au frais (A+ minimum, of course !)
   * Un [poulailler](http://www.amazon.fr/s/ref=a9_sc_1?rh=i%3Aaps%2Ck%3Apoulailler&keywords=poulailler&ie=UTF8&qid=1409152399) (même fabriqué artisanalement !)
