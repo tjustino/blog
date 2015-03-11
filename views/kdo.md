@@ -2,7 +2,8 @@
 
 ---
 
-* Si tu gagnes au loto, un [NUC D54250WYK](http://www.lesnumeriques.com/ordinateur/intel-nuc-d54250wyk-p17664/test.html#test-complet)
+* Si tu gagnes au loto, un [NUC5i7RYH](http://www.intel.fr/content/www/fr/fr/nuc/products-overview.html) 
+ou un [NUC5i5RYK](http://www.intel.fr/content/www/fr/fr/nuc/nuc-kit-nuc5i5ryk.html) si ça te fait trop mal
 
 ---
 
