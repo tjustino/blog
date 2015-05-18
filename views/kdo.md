@@ -7,10 +7,6 @@ ou un [NUC5i5RYK](http://www.intel.fr/content/www/fr/fr/nuc/nuc-kit-nuc5i5ryk.ht
 
 ---
 
-* Un beau barbecue pour charbon de bois (genre un [Weber](http://www.amazon.fr/s/ref=nb_sb_noss?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=node%3D4338681031&field-keywords=weber&rh=n%3A3557027031%2Cn%3A4338284031%2Cn%3A4338317031%2Cn%3A4338481031%2Cn%3A4338681031%2Ck%3Aweber) ^^)
-
----
-
 * _Bricolage_ :
   * un [niveau laser](http://www.amazon.fr/Bosch-lignes-adaptateur-fixation-0603663200/dp/B00911VJKY)
   * une [ponceuse excentrique](http://www.amazon.fr/Bosch-excentrique-PEX-300-AE/dp/B00507FK4O/ref=sr_1_4?s=hi&ie=UTF8&qid=1403263966&sr=1-4&keywords=ponceuse)
