@@ -1,8 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'sinatra'
-gem 'rdiscount'
-gem 'thin'
-gem 'capistrano'
-gem 'capistrano-bundler'
-gem 'capistrano-rbenv'
+gem "sinatra"
+gem "rdiscount"
+gem "slim"
+gem "thin"
+gem "capistrano"
+gem "capistrano-bundler"
+gem "capistrano-rbenv"
