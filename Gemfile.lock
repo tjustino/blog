@@ -22,7 +22,6 @@ GEM
     rack-protection (1.5.3)
       rack
     rake (10.4.2)
-    rdiscount (2.1.8)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -48,7 +47,6 @@ DEPENDENCIES
   capistrano
   capistrano-bundler
   capistrano-rbenv
-  rdiscount
   sinatra
   slim
   thin
