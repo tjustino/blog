@@ -1,0 +1,144 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+body, main {
+  font-size:100%;
+  font-family:"Helvetica Neue",Helvetica,Arial,'Open Sans', sans-serif;
+  color: #030d18;
+  background-color:#DCDCDC;
+}
+
+main {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+main a {text-decoration:none; color: #f5484a;}
+main a:visited {color: #f5484a;}
+
+main ul{
+  list-style-type: circle;
+  margin-left:.9em;
+}
+
+body, html {
+  /* important */
+  height: 100%;
+}  
+
+hr{color:#FFFFFF;margin:1em 0;}
+h3{text-size:1.1em;margin-bottom:.5em;}
+
+
+/* ------------------------
+           Header 
+   ------------------------ */
+
+header {
+  position:fixed;
+  background-color:#333333;
+  display: -webkit-flex; /* Safari */
+  display: flex; 
+  height:3.5em;
+  width:100%;
+  border-radius:3px;
+  z-index:2;
+}
+
+.img_profil{
+  height:80px;
+  width:80px;
+  border-radius:50%;
+  margin: .5rem .9rem;}
+
+nav {
+  width:100%;
+  text-align:center;
+  margin:auto 80px auto 0px;
+}
+
+.social ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;}
+.social li {
+  display: inline-block;
+  margin:5px 15px;
+  color: #DCDCDC;}
+.social a, .social a:visited {color:inherit;color: #DCDCDC;}
+.social a:hover {
+  color:inherit;
+  color:white;  /*#3D484E;*/
+  text-shadow: 2px 2px 2px black;}
+
+/* ------------------------
+        Background 
+   ------------------------ */
+.main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  padding-top:5em;
+}
+
+h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.bg-fixe {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.background{
+  background: url(../img/roue.jpg) no-repeat fixed center top;
+}
+
+/* ------------------------
+        contenu
+   ------------------------ */
+
+.container {
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 1em 0;
+  color: #030d18;
+  text-align:justify;
+}
+
+.container h2 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-bottom: .6em;
+  font-weight: 700;
+}
+.container p {
+  line-height: 1.6;
+}

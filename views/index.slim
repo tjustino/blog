@@ -1,0 +1,52 @@
+doctype html
+html.no-js lang="fr"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    meta name="author" content="Thomas JUSTINO"
+    meta name="description" content="Page de présentation de Thomas Justino"
+
+    title Thomas JUSTINO
+
+    link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700"  type="text/css"
+    link rel="stylesheet" href="css/reset.css"
+    link rel="stylesheet" href="css/style.css"
+    link rel="stylesheet" href="css/font-awesome.min_BMz.css"
+
+    script src="js/modernizr.js"
+
+  body
+    header
+      img.img_profil src="img/tomj.jpg" alt="Profil"
+      nav.social
+        ul
+          li
+            a href="mailto:thomas@justino.fr" target="_blank"
+              i.fa.fa-envelope-o.fa-2x
+          li
+            a href="https://twitter.com/ThomasJustino" target="_blank"
+              i.fa.fa-tweetter.fa-2x
+          li
+            a href="https://github.com/tjustino" target="_blank"
+              i.fa.fa-github.fa-2x
+  
+    main.main-content
+      / - if pitch == :main
+      /   div.bg-fixe.background
+      /     h1 Thomas Justino
+
+      == slim pitch
+
+    javascript:
+      var clicky_site_ids = clicky_site_ids || [];
+      clicky_site_ids.push(100652403);
+      (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//static.getclicky.com/js';
+        ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+      })();
+    noscript
+      p
+        img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100652403ns.gif"
