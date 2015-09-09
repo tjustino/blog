@@ -3,21 +3,17 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-
 body, main {
   font-size:100%;
-  font-family:"Helvetica Neue",Helvetica,Arial,'Open Sans', sans-serif;
+  font-family:'Open Sans';
   color: #030d18;
   background-color:#DCDCDC;
 }
-
 main {
   height: 100%;
   position: relative;
   z-index: 1;
 }
-
 main a {text-decoration:none; color: #f5484a;}
 main a:visited {color: #f5484a;}
 
@@ -32,8 +28,7 @@ body, html {
 }  
 
 hr{color:#FFFFFF;margin:1em 0;}
-h3{text-size:1.1em;margin-bottom:.5em;}
-
+h3{font-size:1.1em;margin-bottom:.5em;}
 
 /* ------------------------
            Header 
@@ -84,7 +79,6 @@ nav {
   height: 100%;
   position: relative;
   z-index: 1;
-  padding-top:5em;
 }
 
 h1 {
@@ -93,11 +87,11 @@ h1 {
   top: 50%;
   bottom: auto;
   right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(30%);
+  -moz-transform: translateX(-50%) translateY(30%);
+  -ms-transform: translateX(-50%) translateY(30%);
+  -o-transform: translateX(-50%) translateY(30%);
+  transform: translateX(-50%) translateY(30%);
   width: 90%;
   max-width: 1170px;
   text-align: center;
@@ -109,7 +103,7 @@ h1 {
 
 .bg-fixe {
   position: relative;
-  min-height: 100%;
+  min-height: 15%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -118,7 +112,7 @@ h1 {
 }
 
 .background{
-  background: url(../img/roue.jpg) no-repeat fixed center top;
+  background-color: #fd7e00;
 }
 
 /* ------------------------
@@ -141,4 +135,19 @@ h1 {
 }
 .container p {
   line-height: 1.6;
+}
+
+/* ------------------------
+        RESPONSIVE
+   ------------------------ */
+
+@media screen and (max-width: 768px) {
+  nav {
+    width:100%;
+    min-width:250px;
+    text-align:right;
+    margin:auto;
+  }
+  .container {max-width: 90%;}
+  .bg-fixe{min-height: 30%;}
 }

@@ -17,7 +17,8 @@ html.no-js lang="fr"
 
   body
     header
-      img.img_profil src="img/tomj.jpg" alt="Profil"
+      a href="/"
+        img.img_profil src="img/tomj.jpg" alt="Profil"
       nav.social
         ul
           li
@@ -31,9 +32,8 @@ html.no-js lang="fr"
               i.fa.fa-github.fa-2x
   
     main.main-content
-      / - if pitch == :main
-      /   div.bg-fixe.background
-      /     h1 Thomas Justino
+      div.bg-fixe.background
+        h1 Thomas Justino
 
       == slim pitch
 
