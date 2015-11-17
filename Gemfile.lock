@@ -17,7 +17,7 @@ GEM
     i18n (0.7.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
-    net-ssh (2.9.2)
+    net-ssh (3.0.1)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -34,9 +34,9 @@ GEM
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     temple (0.7.6)
-    thin (1.6.3)
+    thin (1.6.4)
       daemons (~> 1.0, >= 1.0.9)
-      eventmachine (~> 1.0)
+      eventmachine (~> 1.0, >= 1.0.4)
       rack (~> 1.0)
     tilt (2.0.1)
 
@@ -50,3 +50,6 @@ DEPENDENCIES
   sinatra
   slim
   thin
+
+BUNDLED WITH
+   1.10.6
