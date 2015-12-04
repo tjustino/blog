@@ -15,6 +15,6 @@ no-epoll: true
 daemonize: true
 socket: tmp/sockets/thin.sock
 chdir: /home/tomj/www/blog/current
-ssl: true
-ssl-key-file: /etc/letsencrypt/live/thomas.justino.fr/privkey.pem
-ssl-cert-file: /etc/letsencrypt/live/thomas.justino.fr/fullchain.pem
+# ssl: true
+# ssl-key-file: /etc/letsencrypt/live/thomas.justino.fr/privkey.pem
+# ssl-cert-file: /etc/letsencrypt/live/thomas.justino.fr/cert.pem
