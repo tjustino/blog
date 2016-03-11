@@ -1,4 +1,4 @@
---- 
+---
 user: tomj
 group: users
 pid: tmp/pids/thin.pid
@@ -15,4 +15,4 @@ no-epoll: true
 daemonize: true
 socket: tmp/sockets/thin.sock
 chdir: /home/tomj/www/blog/current
-ssl: true
+ssl: false
