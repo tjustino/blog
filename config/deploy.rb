@@ -1,7 +1,6 @@
 set :application, "blog"
 
 # setup repo
-set :scm,       :git
 set :repo_url,  "git@github.com:tjustino/blog.git"
 
 # setup deploy details
