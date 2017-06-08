@@ -5,7 +5,7 @@ set :repo_url,  "git@github.com:tjustino/blog.git"
 
 # setup deploy details
 set :deploy_user, "tomj"
-set :deploy_to,   "/home/#{fetch(:deploy_user)}/www/#{fetch(:application)}"
+set :deploy_to,   "/srv/http/#{fetch(:application)}"
 
 # setup ssh
 set :ssh_options, { forward_agent: true }
