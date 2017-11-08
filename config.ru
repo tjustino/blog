@@ -1,4 +1,7 @@
-$LOAD_PATH.unshift "lib"
+require "rubygems"
+require "bundler"
 
-require "app"
+Bundler.require
+
+require_relative "app/blog.rb"
 run Sinatra::Application

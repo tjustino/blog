@@ -1,0 +1,28 @@
+doctype html
+html lang="fr"
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"
+    meta name="author" content="Thomas JUSTINO"
+    title Thomas JUSTINO
+  body.bg-light
+    header.container-fluid
+      .row.justify-content-center.pt-2.pb-2.bg-secondary
+        .col-auto
+          a href="mailto:thomas@justino.fr" target="_blank"
+            img src="img/mail.svg" height="40" width="40" alt="courriel"
+        .col-auto
+          a href="https://twitter.com/ThomasJustino" target="_blank"
+            img src="img/twitter.svg" height="40" width="40" alt="Twitter"
+        .col-auto
+          a href="https://github.com/tjustino" target="_blank"
+            img src="img/github.svg" height="40" width="40" alt="GitHub"
+      .row.justify-content-center.pt-3.pb-3.bg-warning
+        h1 Thomas Justino
+      / .fixed-top.pt-3.pl-3
+      /   img.rounded-circle src="img/tomj.jpg" alt="tomj"
+    main.container.pt-3
+      == slim content
+    / footer.container-fluid
+    /   .blockquote-footer.text-right Made with ❤ just for you
