@@ -1,7 +1,7 @@
 require "sinatra"
 
 configure do
-  set :root,  File.expand_path("../../", __FILE__)
+  set :root,  File.expand_path("../", __dir__)
   set :views, settings.root + "/app/views"
 end
 
