@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 set :application, "blog"
 
 # setup repo

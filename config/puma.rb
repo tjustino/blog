@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # https://github.com/puma/puma/blob/master/examples/config.rb
 
 # Bind the server to "url". "tcp://", "unix://" and "ssl://" are the only
