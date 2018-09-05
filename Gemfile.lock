@@ -51,7 +51,11 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.3)
       tilt (~> 2.0)
+<<<<<<< HEAD
     slim (4.0.1)
+=======
+    slim (4.0.0)
+>>>>>>> 17b7b8e1017b4923ac3d49c51eb6b533970b48c2
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
     sshkit (1.17.0)
