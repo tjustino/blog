@@ -1,4 +1,3 @@
 # I consistently use double quotes
 Style/StringLiterals:
-  Enabled: true
   EnforcedStyle: double_quotes
