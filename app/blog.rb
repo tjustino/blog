@@ -3,17 +3,17 @@
 require "sinatra"
 
 configure do
-  set :root,  File.expand_path("../", __dir__)
-  set :views, settings.root + "/app/views"
+  set :root,   File.dirname(__FILE__)
+  set :server, :puma
 end
 
 get "/" do
-  slim :index, locals: { content: :presentation }
+  slim :presentation
 end
 
 ["/kdo", "/cadeau", "/cadeaux"].each do |path|
   get path do
-    slim :index, locals: { content: :kdo }
+    slim :kdo
   end
 end
 
