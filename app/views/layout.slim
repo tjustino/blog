@@ -3,25 +3,38 @@ html lang="fr"
   head
     meta charset="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
+    / https://cdnjs.com/libraries/semantic-ui
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/reset.min.css"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/site.min.css"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/container.min.css"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.min.css"
+    link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/divider.min.css"
     meta name="author" content="Thomas JUSTINO"
     meta name="description" content="Tout moi résumé en 3 chapitres 😅"
     title Thomas JUSTINO
-  body.bg-light
-    header.container-fluid
-      .row.justify-content-center.pt-2.pb-2.bg-secondary
-        .col-auto
+    / css:
+    /   .svg { filter: invert(1); }
+  body
+    header.ui.centered.grid
+      .row.grey style="margin-top: 1rem;"
+        .right.aligned.four.wide.column
           a href="mailto:thomas@justino.fr" target="_blank" rel="noopener"
             img src="img/mail.svg" height="40" width="40" alt="courriel"
-        .col-auto
+        .center.aligned.two.wide.column
           a href="https://twitter.com/ThomasJustino" target="_blank" rel="noopener"
             img src="img/twitter.svg" height="40" width="40" alt="Twitter"
-        .col-auto
+        .left.aligned.four.wide.column
           a href="https://github.com/tjustino" target="_blank" rel="noopener"
             img src="img/github.svg" height="40" width="40" alt="GitHub"
-      .row.justify-content-center.pt-3.pb-3.bg-warning
-        h1 Thomas Justino
-    main.container.pt-3
-      == yield
+      .row.teal
+        .center.aligned.column
+          - if request.path_info == "/"
+            h1 Thomas Justino
+          - else
+            h1
+              a href="/" style="color:inherit;" Thomas Justino
+    main.ui.container.grid
+      .left.aligned.column
+        == yield
     / footer.container-fluid
     /   .blockquote-footer.text-right Made with ❤ just for you
