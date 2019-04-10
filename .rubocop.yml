@@ -1,3 +1,6 @@
+# https://rubocop.readthedocs.io/en/stable/
+require: rubocop-performance
+
 # I consistently use double quotes
 Style/StringLiterals:
   EnforcedStyle: double_quotes
