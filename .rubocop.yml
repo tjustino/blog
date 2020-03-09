@@ -1,6 +1,15 @@
 # https://rubocop.readthedocs.io/en/stable/
 require: rubocop-performance
 
-# I consistently use double quotes
+# Preferences
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
+  Enabled: true
