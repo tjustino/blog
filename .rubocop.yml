@@ -1,11 +1,26 @@
 # https://rubocop.readthedocs.io/en/stable/
 require: rubocop-performance
 
-# Preferences
+# rubocop requirement
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Layout/EmptyLinesAroundAttributeAccessor:
+  Enabled: true
+
+Layout/SpaceAroundMethodCallOperator:
+  Enabled: true
+
 Lint/RaiseException:
   Enabled: true
 
 Lint/StructNewOverride:
+  Enabled: true
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/ExponentialNotation:
   Enabled: true
 
 Style/HashEachMethods:
@@ -17,5 +32,9 @@ Style/HashTransformKeys:
 Style/HashTransformValues:
   Enabled: true
 
+Style/SlicingWithRange:
+  Enabled: true
+
+# Preferences
 Style/StringLiterals:
   EnforcedStyle: double_quotes
