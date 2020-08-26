@@ -5,5 +5,5 @@ require "bundler"
 
 Bundler.require
 
-require_relative "app/blog.rb"
+require_relative "app/blog"
 run Sinatra::Application
