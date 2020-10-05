@@ -9,7 +9,6 @@ gem "slim"
 
 group :development do
   gem "capistrano"
-  gem "capistrano3-puma"
   gem "capistrano-bundler"
   gem "capistrano-rbenv"
   gem "rubocop"

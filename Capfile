@@ -13,8 +13,6 @@ require "capistrano/deploy"
 #
 require "capistrano/rbenv"
 require "capistrano/bundler"
-require "capistrano/puma"
-install_plugin Capistrano::Puma
 
 # load the Git SCM plugin by default
 require "capistrano/scm/git"
