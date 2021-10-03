@@ -9,7 +9,6 @@ require "capistrano/deploy"
 # Includes tasks from other gems included in your Gemfile :
 #   https://github.com/capistrano/rbenv
 #   https://github.com/capistrano/bundler
-#   https://github.com/seuros/capistrano-puma
 #
 require "capistrano/rbenv"
 require "capistrano/bundler"
