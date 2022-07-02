@@ -12,7 +12,7 @@ set :repository,       "git@github.com:tjustino/blog.git"
 set :branch,           "main"
 set :bundle_path,      "vendor/bundle"
 set :forward_agent,    true
-set :bundle_options,   -> { '' }
+set :bundle_options,   -> { "" }
 
 set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/cache", "tmp/sockets", fetch(:bundle_path))
 
