@@ -3,6 +3,7 @@
 require "mina/bundler"
 require "mina/deploy"
 require "mina/git"
+require "mina/puma"
 require "mina/rbenv"
 
 set :application_name, "blog"
@@ -14,7 +15,7 @@ set :bundle_path,      "vendor/bundle"
 set :forward_agent,    true
 set :bundle_options,   -> { "" }
 
-set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
+set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/cache", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
 
 task :remote_environment do
   # If you're using rbenv, use this to load the rbenv environment.
