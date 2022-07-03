@@ -14,7 +14,7 @@ set :bundle_path,      "vendor/bundle"
 set :forward_agent,    true
 set :bundle_options,   -> { "" }
 
-set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/cache", "tmp/sockets", fetch(:bundle_path))
+set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
 
 task :remote_environment do
   # If you're using rbenv, use this to load the rbenv environment.
@@ -38,20 +38,14 @@ task :deploy do
   # uncomment this line to make sure you pushed your local branch to the remote origin
   invoke :"git:ensure_pushed"
   deploy do
-    # Put things that will set up an empty directory into a fully set-up
-    # instance of your project.
+    # Put things that will set up an empty directory into a fully set-up instance of your project.
     invoke :"git:clone"
     invoke :"deploy:link_shared_paths"
     invoke :"bundle:install"
     invoke :"deploy:cleanup"
 
     on :launch do
-      in_path(fetch(:current_path)) do
-        # command %{mkdir -p tmp/}
-        # command %{touch tmp/restart.txt}
-      end
+      invoke :'puma:phased_restart'
     end
   end
-
-  run(:local) { puts "done 🎉" }
 end
