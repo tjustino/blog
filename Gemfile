@@ -9,7 +9,6 @@ gem "slim"
 
 group :development do
   gem "mina"
-  gem "mina-puma"
   gem "rubocop"
   gem "rubocop-performance"
 end

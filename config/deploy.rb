@@ -3,7 +3,6 @@
 require "mina/bundler"
 require "mina/deploy"
 require "mina/git"
-require "mina/puma"
 require "mina/rbenv"
 
 set :application_name, "blog"
@@ -14,12 +13,11 @@ set :branch,           "main"
 set :bundle_path,      "vendor/bundle"
 set :forward_agent,    true
 set :bundle_options,   -> { "" }
+set :keep_releases,    3
 
 set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/cache", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
 
 task :remote_environment do
-  # If you're using rbenv, use this to load the rbenv environment.
-  # Be sure to commit your .ruby-version or .rbenv-version to your repository.
   invoke :"rbenv:load"
   command "#{fetch(:bundle_bin)} config set deployment 'true'"
   command "#{fetch(:bundle_bin)} config set path '#{fetch(:bundle_path)}'"
@@ -46,7 +44,7 @@ task :deploy do
     invoke :"deploy:cleanup"
 
     on :launch do
-      invoke :'puma:phased_restart'
+      # invoke :'puma:phased_restart'
     end
   end
 end
