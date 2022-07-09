@@ -15,7 +15,7 @@ set :forward_agent,    true
 set :bundle_options,   -> { "" }
 set :keep_releases,    3
 
-set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/cache", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
+set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
 
 task :remote_environment do
   invoke :"rbenv:load"
@@ -24,12 +24,8 @@ task :remote_environment do
   command "#{fetch(:bundle_bin)} config set without '#{fetch(:bundle_withouts)}'"
 end
 
-# Put any custom commands you need to run at setup
-# All paths in `shared_dirs` and `shared_paths` will be created on their own.
 task :setup do
-  # command %{rbenv install 2.5.3 --skip-existing}
-  # command %{rvm install ruby-2.5.3}
-  # command %{gem install bundler}
+  command "rbenv install #{RUBY_VERSION} --skip-existing"
 end
 
 desc "Deploys the current version to the server."
