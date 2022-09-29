@@ -8,12 +8,12 @@ configure do
 end
 
 get "/" do
-  slim :presentation
+  erb :presentation
 end
 
 ["/kdo", "/cadeau", "/cadeaux"].each do |path|
   get path do
-    slim :kdo
+    erb :kdo
   end
 end
 

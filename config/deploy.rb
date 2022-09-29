@@ -40,7 +40,7 @@ task :deploy do
     invoke :"deploy:cleanup"
 
     on :launch do
-      # invoke :'puma:phased_restart'
+      # command "systemctl restart puma"
     end
   end
 end

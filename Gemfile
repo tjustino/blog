@@ -5,7 +5,6 @@ ruby   "3.1.2"
 
 gem "puma"
 gem "sinatra"
-gem "slim"
 
 group :development do
   gem "mina"

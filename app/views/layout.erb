@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%# https://cdnjs.com/libraries/semantic-ui %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/site.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/container.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/divider.min.css">
+    <meta name="author" content="Thomas JUSTINO">
+    <meta name="description" content="Tout moi résumé en 3 chapitres 😅">
+    <title>Thomas JUSTINO</title>
+  </head>
+  <body>
+    <header class="ui centered grid">
+      <div class="row grey" style="margin-top: 1rem;">
+        <div class="right aligned four wide column">
+          <a href="mailto:thomas@justino.fr" target="_blank" rel="noopener">
+            <img src="img/mail.svg" height="40" width="40" alt="courriel">
+          </a>
+        </div>
+        <div class="center aligned two wide column">
+          <a href="https://twitter.com/ThomasJustino" target="_blank" rel="noopener">
+            <img src="img/twitter.svg" height="40" width="40" alt="Twitter">
+          </a>
+        </div>
+        <div class="left aligned four wide column">
+          <a href="https://github.com/tjustino" target="_blank" rel="noopener">
+            <img src="img/github.svg" height="40" width="40" alt="GitHub">
+          </a>
+        </div>
+      </div>
+      <div class="row teal">
+        <div class="center aligned column">
+          <% if request.path_info == "/" %>
+            <h1>Thomas JUSTINO</h1>
+          <% else %>
+            <h1>
+              <a href="/" style="color:inherit;">Thomas JUSTINO</a>
+            </h1>
+          <% end %>
+        </div>
+      </div>
+    </header>
+    <main class="ui container grid">
+      <div class="left aligned column">
+        <%= yield %>
+      </div>
+    </main>
+  </body>
+</html>
+<!-- Made with ❤ just for you -->
