@@ -3,11 +3,10 @@
 require "mina/bundler"
 require "mina/deploy"
 require "mina/git"
-require "mina/rbenv"
 
 set :application_name, "blog"
-set :domain,           "justino.fr"
-set :deploy_to,        "/srv/http/#{fetch(:application_name)}"
+set :domain,           "ssh-tomj.alwaysdata.net"
+set :deploy_to,        "/home/tomj/www/#{fetch(:application_name)}"
 set :repository,       "git@github.com:tjustino/blog.git"
 set :branch,           "main"
 set :bundle_path,      "vendor/bundle"
@@ -18,14 +17,9 @@ set :keep_releases,    3
 set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
 
 task :remote_environment do
-  invoke :"rbenv:load"
   command "#{fetch(:bundle_bin)} config set deployment 'true'"
   command "#{fetch(:bundle_bin)} config set path '#{fetch(:bundle_path)}'"
   command "#{fetch(:bundle_bin)} config set without '#{fetch(:bundle_withouts)}'"
-end
-
-task :setup do
-  command "rbenv install #{RUBY_VERSION} --skip-existing"
 end
 
 desc "Deploys the current version to the server."
