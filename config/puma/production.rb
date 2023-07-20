@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-root_deploiement = File.expand_path("../../../../", File.dirname(__FILE__))
+root_deploiement = File.expand_path("../../../", File.dirname(__FILE__))
 
 directory "#{root_deploiement}/current"
 environment "production"
