@@ -2,46 +2,38 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%# https://cdnjs.com/libraries/semantic-ui %>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/components/reset.min.css" integrity="sha512-4oi+quFCpWrFqNtLmv0A56oLa8Br7PQ//DkMffNgO18cgxjWmVOuyPwZJlTAbpS9SYLDoGAxtg90EsMbjTSqcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/components/site.min.css" integrity="sha512-yEmNIS6Qdu0YdnkjO1ESV2WOq8ZrFyUCv11SyHSpiTWNq8wzH9IXV2cpfCoYzVnJ7N6TsWoRolz59B8n4yB0TQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/container.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/components/grid.min.css" integrity="sha512-Ohj+DnL1EK4rLz1ZmdJ2XkqFUk8QtUKU/z5p0GA11OrkB8b1aEC8083wIapgpP/dj1E+MClxAYdUnmTY3rbFCg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/components/divider.min.css" integrity="sha512-oVjlQ44wbePOJ4mK1reaPNn45WUnBnieWk5VgVCC15MnZXhu8/F/LkLlhHmwMYJs+B/UK+PyuGlFQPYe02StSg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="author" content="Thomas JUSTINO">
-    <meta name="description" content="Site perso de Thomas JUSTINO">
     <title>Thomas JUSTINO</title>
+    <meta name="description" content="Site perso de Thomas JUSTINO">
+    <meta name="author" content="Thomas JUSTINO">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="img/favicon.ico" sizes="any">
+    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="ui centered grid">
-      <div class="row grey" style="margin-top: 1rem;">
-        <div class="right aligned four wide column">
+  <body class="bg-slate-100">
+    <header>
+      <div class="flex py-3 w-full place-content-center space-x-5 bg-slate-400">
           <a href="mailto:thomas@justino.fr" target="_blank" rel="noopener">
             <img src="img/mail.svg" height="40" width="40" alt="courriel">
           </a>
-        </div>
-        <div class="left aligned four wide column">
           <a href="https://github.com/tjustino" target="_blank" rel="noopener">
             <img src="img/github.svg" height="40" width="40" alt="GitHub">
           </a>
-        </div>
       </div>
-      <div class="row teal">
-        <div class="center aligned column">
+      <div class="flex py-3 place-content-center bg-slate-300">
+        <h1 class="text-3xl font-bold">
           <% if request.path_info == "/" %>
-            <h1>Thomas JUSTINO</h1>
+            Thomas JUSTINO
           <% else %>
-            <h1>
-              <a href="/" style="color:inherit;">Thomas JUSTINO</a>
-            </h1>
-          <% end %>
-        </div>
+            <a href="/">Thomas JUSTINO</a>
+          </h1>
+        <% end %>
       </div>
     </header>
-    <main class="ui container grid">
-      <div class="left aligned column">
-        <%= yield %>
-      </div>
+    <main class="pt-3 px-5 container mx-auto md:px-0">
+      <%= yield %>
     </main>
   </body>
 </html>

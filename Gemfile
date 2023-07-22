@@ -7,6 +7,7 @@ gem "puma"
 gem "sinatra"
 
 group :development do
+  gem "foreman"
   gem "mina"
   gem "rubocop"
   gem "rubocop-performance"
