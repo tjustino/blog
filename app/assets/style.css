@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  header h1 {
+    @apply text-3xl font-bold;
+  }
+
+  main h1 {
+    @apply text-2xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-bold pt-5;
+  }
+}
+
+@layer components {
+  .chapter {
+    @apply text-justify pt-2;
+  }
+
+  .link {
+    @apply text-sky-900 underline hover:decoration-dotted;
+  }
+
+  .list {
+    @apply text-justify list-disc list-inside pl-5;
+  }
+}
