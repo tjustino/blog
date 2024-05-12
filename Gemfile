@@ -4,7 +4,7 @@ source "https://rubygems.org"
 ruby   "3.3.1"
 
 gem "puma"
-gem "sinatra"
+gem "sinatra", "~> 3.2"
 
 group :development do
   gem "foreman"
