@@ -11,23 +11,25 @@ GEM
     mustermann (3.0.0)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.7.3)
-    parallel (1.24.0)
-    parser (3.3.1.0)
+    parallel (1.25.1)
+    parser (3.3.2.0)
       ast (~> 2.4.1)
       racc
     puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.8.0)
-    rack (2.2.9)
-    rack-protection (3.2.0)
+    rack (3.0.11)
+    rack-protection (4.0.0)
       base64 (>= 0.1.0)
-      rack (~> 2.2, >= 2.2.4)
+      rack (>= 3.0.0, < 4)
+    rack-session (2.0.0)
+      rack (>= 3.0.0)
     rainbow (3.1.1)
     rake (13.2.1)
     regexp_parser (2.9.2)
-    rexml (3.2.8)
-      strscan (>= 3.0.9)
-    rubocop (1.64.0)
+    rexml (3.2.9)
+      strscan
+    rubocop (1.64.1)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -45,10 +47,11 @@ GEM
       rubocop-ast (>= 1.31.1, < 2.0)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
-    sinatra (3.2.0)
+    sinatra (4.0.0)
       mustermann (~> 3.0)
-      rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.2.0)
+      rack (>= 3.0.0, < 4)
+      rack-protection (= 4.0.0)
+      rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
     strscan (3.1.0)
     tilt (2.3.0)
@@ -63,10 +66,10 @@ DEPENDENCIES
   puma
   rubocop
   rubocop-performance
-  sinatra (~> 3.2)
+  sinatra
 
 RUBY VERSION
-   ruby 3.3.1p55
+   ruby 3.3.2p78
 
 BUNDLED WITH
    2.5.10
