@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require "rubygems"
-require "bundler"
-
-Bundler.require
-
+require          "rack/protection"
 require_relative "app/blog"
-run Sinatra::Application
+
+use Rack::Protection
+
+run MyBlog
