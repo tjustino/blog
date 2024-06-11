@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 ruby   "3.3.2"
 
-gem "sinatra"
+gem "sinatra", "~> 3.2"
 gem "rackup"
 
 group :development do
