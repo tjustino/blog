@@ -32,9 +32,5 @@ task :deploy do
     invoke :"deploy:link_shared_paths"
     invoke :"bundle:install"
     invoke :"deploy:cleanup"
-
-    on :launch do
-      # command "systemctl restart puma"
-    end
   end
 end

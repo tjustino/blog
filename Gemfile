@@ -3,8 +3,8 @@
 source "https://rubygems.org"
 ruby   "3.3.2"
 
-gem "puma"
-gem "sinatra", "~> 3.2"
+gem "sinatra"
+gem "rackup"
 
 group :development do
   gem "foreman"
