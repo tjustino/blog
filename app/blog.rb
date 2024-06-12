@@ -4,10 +4,6 @@ require "sinatra/base"
 
 # What a minimalist app!
 class MyBlog < Sinatra::Base
-  configure do
-    set :root, File.dirname(__FILE__)
-  end
-
   get "/" do
     erb :presentation
   end
