@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 ruby   "3.3.2"
 
-gem "puma"
+gem "rackup"
 gem "sinatra"
 
 group :development do

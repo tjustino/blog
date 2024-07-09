@@ -12,9 +12,9 @@ set :branch,           "main"
 set :bundle_path,      "vendor/bundle"
 set :forward_agent,    true
 set :bundle_options,   -> { "" }
-set :keep_releases,    3
+set :keep_releases,    2
 
-set :shared_dirs, fetch(:shared_dirs, []).push("log", "tmp/pids", "tmp/sockets", fetch(:bundle_path))
+set :shared_dirs, fetch(:shared_dirs, []).push("log", fetch(:bundle_path))
 
 task :remote_environment do
   command "#{fetch(:bundle_bin)} config set deployment 'true'"
