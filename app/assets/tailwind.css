@@ -3,20 +3,36 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply bg-slate-100;
+  }
+
   header h1 {
-    @apply text-3xl font-bold;
+    @apply flex py-3 place-content-center bg-slate-300 text-3xl font-bold;
+  }
+
+  main {
+    @apply p-5 container mx-auto;
   }
 
   main h1 {
     @apply text-2xl font-bold;
   }
 
-  h2 {
+  main h2 {
     @apply text-xl font-bold pt-5;
+  }
+
+  main div {
+    @apply pl-2;
   }
 }
 
 @layer components {
+  .banner {
+    @apply flex py-3 w-full place-content-center space-x-5 bg-slate-400;
+  }
+
   .chapter {
     @apply text-justify pt-2;
   }
