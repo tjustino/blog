@@ -14,6 +14,12 @@ class MyBlog < Sinatra::Base
     end
   end
 
+  ["/coherence-cardiaque", "/coherence", "/cc"].each do |path|
+    get path do
+      erb :coherence
+    end
+  end
+
   get "/*" do
     redirect "/"
   end

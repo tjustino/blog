@@ -29,7 +29,7 @@
 }
 
 @layer components {
-  .banner {
+  #banner {
     @apply flex py-3 w-full place-content-center space-x-5 bg-slate-400;
   }
 
