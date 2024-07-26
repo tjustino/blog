@@ -23,7 +23,7 @@
     @apply text-xl font-bold pt-5;
   }
 
-  main div {
+  main div i {
     @apply pl-2;
   }
 }
