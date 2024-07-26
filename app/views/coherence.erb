@@ -9,4 +9,10 @@
   document.getElementById("title").style.display = "none";
   var circle = document.getElementById("circle");
   circle.animate({ r: ["0%", "50%"] }, { duration: 5000, iterations: 60, direction: "alternate", fill: "forwards" });
+
+  document.addEventListener("visibilitychange", async () => {
+    if (screenLock !== null && document.visibilityState === "visible") {
+      screenLock = await navigator.wakeLock.request("screen");
+    }
+  });
 </script> 
