@@ -5,14 +5,18 @@
 </svg>
 
 <script>
+  const requestWakeLock = async () => {
+    try {
+      const wakeLock = await navigator.wakeLock.request("screen");
+    } catch (err) {
+      <%# The wake lock request fails - usually system-related, such as low battery %>
+      console.log(err.message);
+    }
+  };
+  requestWakeLock();
+
   document.getElementById("banner").style.display = "none";
   document.getElementById("title").style.display = "none";
   var circle = document.getElementById("circle");
   circle.animate({ r: ["0%", "50%"] }, { duration: 5000, iterations: 60, direction: "alternate", fill: "forwards" });
-
-  document.addEventListener("visibilitychange", async () => {
-    if (screenLock !== null && document.visibilityState === "visible") {
-      screenLock = await navigator.wakeLock.request("screen");
-    }
-  });
 </script> 
