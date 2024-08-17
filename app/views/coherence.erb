@@ -5,18 +5,32 @@
 </svg>
 
 <script>
+  let wakeLock = null;
+
   const requestWakeLock = async () => {
-    try {
-      const wakeLock = await navigator.wakeLock.request("screen");
-    } catch (err) {
-      <%# The wake lock request fails - usually system-related, such as low battery %>
-      console.log(err.message);
-    }
+   try {
+     wakeLock = await navigator.wakeLock.request();
+     wakeLock.addEventListener("release", () => {
+       console.log("Screen Wake Lock released:", wakeLock.released);
+     });
+     console.log("Screen Wake Lock released:", wakeLock.released);
+   } catch (err) {
+     console.error(`${err.name}, ${err.message}`);
+   }
   };
-  requestWakeLock();
+
+  (async() => {
+    await requestWakeLock();
+  })();
 
   document.getElementById("banner").style.display = "none";
   document.getElementById("title").style.display = "none";
   var circle = document.getElementById("circle");
   circle.animate({ r: ["0%", "50%"] }, { duration: 5000, iterations: 60, direction: "alternate", fill: "forwards" });
-</script> 
+
+  window.setTimeout(() => {
+    wakeLock.release();
+    wakeLock = null;
+  }, 300000);
+</script>
+
