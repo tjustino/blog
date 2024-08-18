@@ -5,23 +5,25 @@
 </svg>
 
 <script>
-  let wakeLock = null;
+  if ("wakeLock" in navigator) {
+    let wakeLock = null;
 
-  const requestWakeLock = async () => {
-   try {
-     wakeLock = await navigator.wakeLock.request();
-     wakeLock.addEventListener("release", () => {
-       console.log("Screen Wake Lock released:", wakeLock.released);
-     });
-     console.log("Screen Wake Lock released:", wakeLock.released);
-   } catch (err) {
-     console.error(`${err.name}, ${err.message}`);
-   }
-  };
+    const requestWakeLock = async () => {
+      try {
+        wakeLock = await navigator.wakeLock.request("screen");
+      } catch (err) {
+        window.alert(err.name + " : " + err.message)
+      }
+    } // requestWakeLock()
 
-  (async() => {
-    await requestWakeLock();
-  })();
+    requestWakeLock();
+  } else {
+    window.alert("Wake lock is not supported by this browser 😓");
+  }
+
+  //(async() => {
+  //  await requestWakeLock();
+  //})();
 
   document.getElementById("banner").style.display = "none";
   document.getElementById("title").style.display = "none";
