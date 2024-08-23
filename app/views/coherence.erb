@@ -1,38 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" role="graphics-document">
   <circle cx="50" cy="50" r="50" fill="#b8c4ce" />
-  <circle cx="50" cy="50" r="0" fill="#1b655e" id="circle" />
+  <circle cx="50" cy="50" r="0" fill="#1b655e" id="moving-circle" />
   <circle cx="50" cy="50" r="0.5" fill="#caa53d" />
 </svg>
 
 <script>
-  if ("wakeLock" in navigator) {
-    let wakeLock = null;
-
-    const requestWakeLock = async () => {
-      try {
-        wakeLock = await navigator.wakeLock.request("screen");
-      } catch (err) {
-        window.alert(err.name + " : " + err.message)
-      }
-    } // requestWakeLock()
-
-    requestWakeLock();
-  } else {
-    window.alert("Wake lock is not supported by this browser 😓");
-  }
-
-  //(async() => {
-  //  await requestWakeLock();
-  //})();
-
   document.getElementById("banner").style.display = "none";
   document.getElementById("title").style.display = "none";
-  var circle = document.getElementById("circle");
-  circle.animate({ r: ["0%", "50%"] }, { duration: 5000, iterations: 60, direction: "alternate", fill: "forwards" });
 
-  window.setTimeout(() => {
-    wakeLock.release();
-    wakeLock = null;
-  }, 300000);
+  document.addEventListener("click", () => {
+    if ("wakeLock" in navigator) {
+      let wakeLock = null;
+
+      const requestWakeLock = async () => {
+        try {
+          wakeLock = await navigator.wakeLock.request("screen");
+        } catch (err) {
+          window.alert(err.name + " : " + err.message)
+        }
+      } // requestWakeLock()
+
+      requestWakeLock();
+    } else {
+      window.alert("Wake lock is not supported by this browser 😓");
+    }
+
+    var circle = document.getElementById("moving-circle");
+    circle.animate({ r: ["0%", "50%"] }, { duration: 5000, iterations: 60, direction: "alternate", fill: "forwards" });
+
+    window.setTimeout(() => {
+      wakeLock.release();
+      wakeLock = null;
+    }, 300000);
+  })
 </script>
 
