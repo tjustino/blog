@@ -4,3 +4,6 @@ User-agent: *
 Disallow: /kdo
 Disallow: /cadeau
 Disallow: /cadeaux
+Disallow: /coherence-cardiaque
+Disallow: /coherence
+Disallow: /cc
