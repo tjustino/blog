@@ -5,8 +5,7 @@
 </svg>
 
 <script>
-  document.getElementById("banner").style.display = "none";
-  document.getElementById("title").style.display = "none";
+  document.getElementsByTagName("header")[0].remove();
 
   document.addEventListener("click", () => {
     if ("wakeLock" in navigator) {
