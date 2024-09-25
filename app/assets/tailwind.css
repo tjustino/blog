@@ -45,7 +45,7 @@
   }
 
   .circles {
-    @apply flex justify-center items-center h-full;
+    @apply flex justify-center items-center h-full pb-48;
   }
 
   .circles svg {
