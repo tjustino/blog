@@ -3,15 +3,19 @@
 
 @layer base {
   body {
-    @apply bg-slate-100;
+    @apply flex min-h-screen flex-col bg-slate-100 font-sans;
   }
 
   header h1 {
-    @apply flex py-3 place-content-center bg-slate-300 text-3xl font-bold;
+    @apply flex justify-center bg-slate-400 p-4 text-3xl font-bold;
+  }
+
+  header address {
+    @apply flex flex-row justify-center space-x-4 bg-slate-300 p-4;
   }
 
   main {
-    @apply p-5 container mx-auto h-screen;
+    @apply container mx-auto flex-1 p-4 text-justify;
   }
 
   main h1 {
@@ -19,36 +23,28 @@
   }
 
   main h2 {
-    @apply text-xl font-bold pt-5;
+    @apply pt-4 text-xl font-bold;
+  }
+
+  main a {
+    @apply text-sky-900 underline hover:decoration-dotted;
+  }
+
+  main ul {
+    @apply list-inside list-disc pl-4;
   }
 
   main div i {
-    @apply pl-2;
+    @apply inline-block pl-2;
   }
 }
 
 @layer components {
-  #banner {
-    @apply flex py-3 w-full place-content-center space-x-5 bg-slate-400;
-  }
-
-  .chapter {
-    @apply text-justify pt-2;
-  }
-
-  .link {
-    @apply text-sky-900 underline hover:decoration-dotted;
-  }
-
-  .list {
-    @apply text-justify list-disc list-inside pl-5;
-  }
-
   .circles {
-    @apply flex justify-center items-center h-full pb-32;
+    @apply flex justify-center pt-16;
   }
 
   .circles svg {
-    @apply w-full h-full lg:w-96 lg:h-96;
+    @apply size-96;
   }
 }
