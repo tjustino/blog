@@ -14,14 +14,6 @@
   </head>
   <body>
     <header>
-      <div id="banner">
-        <a href="mailto:thomas@justino.fr" target="_blank" rel="noopener">
-          <img src="img/mail.svg" height="40" width="40" alt="courriel">
-        </a>
-        <a href="https://github.com/tjustino" target="_blank" rel="noopener">
-          <img src="img/github.svg" height="40" width="40" alt="GitHub">
-        </a>
-      </div>
       <h1 id="title">
         <% if request.path_info == "/" %>
           Thomas JUSTINO
@@ -29,6 +21,14 @@
           <a href="/">Thomas JUSTINO</a>
         <% end %>
       </h1>
+      <address>
+        <a href="mailto:thomas@justino.fr" target="_blank" rel="noopener">
+          <img src="img/mail.svg" height="40" width="40" alt="courriel">
+        </a>
+        <a href="https://github.com/tjustino" target="_blank" rel="noopener">
+          <img src="img/github.svg" height="40" width="40" alt="GitHub">
+        </a>
+      </address>
     </header>
     <main>
       <%= yield %>
