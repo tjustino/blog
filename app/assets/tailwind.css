@@ -11,7 +11,7 @@
   }
 
   header address {
-    @apply flex flex-row justify-center space-x-4 bg-slate-300 p-4;
+    @apply flex flex-row justify-center space-x-4 bg-slate-300 p-2;
   }
 
   main {
