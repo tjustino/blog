@@ -1,7 +1,7 @@
 ## Installation
 1. Download the latest [Tailwind CSS binary](https://github.com/tailwindlabs/tailwindcss/releases/latest) and place it aside this file
 2. Run `bundle install`
-3. Run `foreman start`
+3. Run `bundle exec foreman start`
 
 ## Thanks
 * [Openclipart](https://openclipart.org/) for the [favicon](https://openclipart.org/detail/154093/talk-bubble-by-printerkiller)
