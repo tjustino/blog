@@ -41,10 +41,18 @@
 
 @layer components {
   .circles {
-    @apply flex justify-center pt-16;
+    @apply flex flex-col items-center pt-16;
   }
 
   .circles svg {
     @apply size-96;
+  }
+
+  .circles p#warning {
+    @apply pb-4;
+  }
+
+  .circles p#instructions {
+    @apply pt-4 text-sm text-gray-500;
   }
 }
