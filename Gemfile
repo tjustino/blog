@@ -3,11 +3,11 @@
 source "https://rubygems.org"
 
 gem "rackup"
-gem "sinatra", "~> 3.2"
+gem "sinatra"
 
 group :development do
   gem "foreman"
-  gem "mina"
+  gem "kamal"
   gem "rubocop"
   gem "rubocop-performance"
 end
