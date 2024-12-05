@@ -45,14 +45,10 @@
   }
 
   .circles svg {
-    @apply size-96;
+    @apply size-max md:size-96;
   }
 
-  .circles p#warning {
-    @apply pb-4;
-  }
-
-  .circles p#instructions {
-    @apply pt-4 text-sm text-gray-500;
+  .circles p {
+    @apply pt-4 text-center text-sm text-gray-500;
   }
 }
