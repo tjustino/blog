@@ -1,23 +1,3 @@
-<style>
-  @keyframes circleAnimation {
-    0% { r: 0%; }
-    100% { r: 50%; }
-  }
-
-  @keyframes instructionsAnimation {
-    0% { opacity: 0%; }
-    100% { opacity: 100%; }
-  }
-
-  .zoom-in-and-out {
-    animation: circleAnimation 5s 6 alternate forwards;
-  }
-
-  .opacity-in-and-out {
-    animation: instructionsAnimation 5s 6 alternate forwards;
-  }
-</style>
-
 <div class="circles">
   <p id="warning">⚠️ L'exercice n'est pas réalisable car votre navigateur se mettrait en veille en plein milieu !</p>
   <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" role="graphics-document">
@@ -25,13 +5,13 @@
     <circle cx="50" cy="50" r="0" fill="#1b655e" id="moving-circle" />
     <circle cx="50" cy="50" r="0.5" fill="#caa53d" />
   </svg>
-  <p id="instructions">Cliquez et commencez par inspirer par le nez pendant 5s tout en gonflant votre ventre</p>
+  <p id="instructions">Cliquez pour démarrer puis alternez entre :<br />5 secondes d'inspiration par le nez en gonflant le ventre<br />5 secondes d'expiration par la bouche en le dégonflant</p>
 </div>
 
 <script>
   if ("wakeLock" in navigator) {
-    let movingCircle = document.getElementById("moving-circle");
-    let instructions = document.getElementById("instructions");
+    let duration   = 5000;
+    let iterations = 60;
 
     document.getElementsByTagName("header")[0].remove();
     document.getElementById("warning").remove();
@@ -49,34 +29,24 @@
     } // requestWakeLock()
 
     document.addEventListener("click", () => {
-      let iterationCount = 0;
       requestWakeLock();
       console.log("Wake Lock is active 🔒");
 
-      movingCircle.classList.toggle("zoom-in-and-out");
-      instructions.classList.toggle("opacity-in-and-out");
-
-      instructions.addEventListener("animationiteration", () => {
-        iterationCount++;
-        // check if iterationCount is odd or even
-        if (iterationCount === 1 || iterationCount & 1) {
-           instructions.textContent = "Expirez par la bouche, dégonflez le ventre"
-        }
-        else {
-          instructions.textContent = "Inspirez par le nez en gonflant le ventre"
-        }
-      });
+      document.getElementById("instructions").remove();
+      document.getElementById("moving-circle").animate(
+        { r: ["0%", "50%"] },
+        { duration: duration, iterations: iterations, direction: "alternate", fill: "forwards" }
+      );
 
       window.setTimeout(() => {
         wakeLock.release().then(() => {
           wakeLock = null;
         });
-      // }, 300000);
-      }, 30000);
+      }, duration * iterations);
     })
   } else {
     console.log("Wake lock is not supported by this browser 😓");
     document.getElementsByTagName("svg")[0].remove();
-    document.getElementsByTagName("p")[1].remove();
+    document.getElementById("instructions").remove();
   }
 </script>
