@@ -20,6 +20,10 @@ class MyBlog < Sinatra::Base
     end
   end
 
+  get "/up" do
+    "<!DOCTYPE html><html><body style=\"background-color: green\"></body></html>"
+  end
+
   get "/*" do
     redirect "/"
   end
