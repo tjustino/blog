@@ -5,6 +5,8 @@
 # docker build -t blog .
 # docker run -d -p 80:80 --name blog blog
 
+LABEL org.opencontainers.image.source https://github.com/tjustino/blog
+
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version
 ARG RUBY_VERSION=3.3.6
 FROM ruby:$RUBY_VERSION-alpine AS base
