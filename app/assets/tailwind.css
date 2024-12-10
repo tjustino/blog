@@ -45,7 +45,7 @@
   }
 
   .circles svg {
-    @apply size-max md:size-96;
+    @apply size-full md:size-96;
   }
 
   .circles p {
