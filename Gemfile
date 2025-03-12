@@ -9,5 +9,4 @@ group :development do
   gem "foreman"
   gem "kamal"
   gem "rubocop"
-  gem "rubocop-performance"
 end

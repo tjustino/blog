@@ -1,10 +1,6 @@
-# https://rubocop.readthedocs.io/en/stable/
-require: rubocop-performance
-
-# pending Cops
+# https://docs.rubocop.org/rubocop/index.html
 AllCops:
   NewCops: enable
 
-# Preferences
 Style/StringLiterals:
   EnforcedStyle: double_quotes
