@@ -10,7 +10,7 @@ servers:
     - 51.38.176.164
 
 # Enable SSL auto certification via Let's Encrypt and allow for multiple apps on a single web server.
-proxy: 
+proxy:
   ssl: true
   host: thomas.justino.fr
 
@@ -27,11 +27,6 @@ password:
 aliases:
   shell: app exec --interactive --reuse "bash"
   logs: app logs -f
-
-# Bridge fingerprinted assets, like JS and CSS, between versions to avoid
-# hitting 404 on in-flight requests. Combines all files from new and old
-# version inside the asset_path.
-asset_path: /blog/public/assets
 
 # Configure builder setup.
 builder:
