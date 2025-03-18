@@ -18,10 +18,9 @@ proxy:
 registry:
   server: ghcr.io
   username: tjustino
-
-# Always use an access token rather than real password (pulled from .kamal/secrets).
-password:
-  - KAMAL_REGISTRY_PASSWORD
+  # Always use an access token rather than real password (pulled from .kamal/secrets).
+  password:
+    - KAMAL_REGISTRY_PASSWORD
 
 # Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
 aliases:
