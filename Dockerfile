@@ -2,7 +2,7 @@
 
 # This Dockerfile is designed for production, not development. Use with Kamal or build'n'run by hand:
 # docker build -t blog .
-# docker run -d -p 80:80 --name blog blog
+# docker run -p 3000:80 --name blog blog
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version
 ARG RUBY_VERSION=3.4.2
@@ -38,9 +38,6 @@ RUN bundle install && \
 # Copy application code
 COPY . .
 
-# Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-# RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
-
 # Final stage for app image
 FROM base
 
@@ -50,10 +47,9 @@ COPY --from=build /blog /blog
 
 # Run and own only the runtime files as a non-root user for security
 RUN groupadd --system --gid 1000 blog && \
-    useradd blog --uid 1000 --gid 1000 --create-home --shell /bin/bash && \
-    chown -R blog:blog log tmp
+    useradd blog --uid 1000 --gid 1000 --create-home --shell /bin/bash
 USER 1000:1000
 
-# Start server via Thruster by default, this can be overwritten at runtime
+# Start web server
 EXPOSE 80
-CMD ["./bin/thrust", "./bin/rails", "server"]
+CMD ["bundle", "exec", "puma"]
