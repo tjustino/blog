@@ -5,4 +5,5 @@
 # For more information about methods provided by the DSL, see https://puma.io/puma/Puma/DSL.html
 
 workers 3
-port 3000
+port = ENV["APP_ENV"] == "production" ? 80 : 3000
+bind "tcp://0.0.0.0:#{port}"
