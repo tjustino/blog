@@ -17,6 +17,10 @@
     @apply container mx-auto flex-1 p-4 text-justify;
   }
 
+  main button {
+    @apply w-full cursor-pointer text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l font-medium rounded-lg p-4 text-center;
+  }
+
   main h1 {
     @apply text-2xl font-bold;
   }
@@ -27,6 +31,22 @@
 
   main a {
     @apply text-sky-900 underline hover:decoration-dotted;
+  }
+
+  main ol {
+    @apply py-8;
+  }
+
+  main ol li {
+    @apply list-none p-4 text-center;
+  }
+
+  main ol li:nth-child(even) {
+    @apply bg-cyan-50;
+  }
+
+  main ol li:nth-child(odd) {
+    @apply bg-blue-100;
   }
 
   main ul {

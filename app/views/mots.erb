@@ -1,0 +1,16 @@
+<h2>Mots outils</h2>
+
+<ol>
+  <li><%= @set1 %></li>
+  <li><%= @set2 %></li>
+  <li><%= @set3 %></li>
+  <li><%= @set4 %></li>
+</ol>
+
+<form action="/mots" method="get">
+  <button type="submit">Nouveau mot</button>
+</form>
+
+<script>
+  document.getElementsByTagName("header")[0].remove();
+</script>
