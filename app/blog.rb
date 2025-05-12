@@ -22,14 +22,15 @@ class MyBlog < Sinatra::Base
 
   ["/mots-outils", "/mots", "/mo"].each do |path|
     get path do
-      @set1 = ["un", "le", "il y a ", "sur", "dans", "la", "et", "sous", "est",
-               "une", "il", "aussi", "des", "c'est", "elle", "les", "du"].sample
-      @set2 = ["avec", "ses", "j'ai", "même", "mon", "pour", "de", "mes", "près de", "mais",
-               "car", "son", "comme", "non", "il fait", "autour", "puis", "déjà", "chez"].sample
-      @set3 = %w[quand tes cette aussitôt mais toujours qui
-                 debout ensuite devant derrière après voici celle].sample
-      @set4 = ["voilà", "encore", "alors", "soudain", "c'était", "vers",
-               "peut-être", "dedans", "tout", "quel", "chacun"].sample
+      @mots_outils = ["à", "alors", "après", "au", "aussi", "aussitôt", "autour", "avant", "avec", "bien", "c'est",
+        "c'était", "car", "ce", "celle", "ces", "cette", "chacun", "chez", "comme", "comment", "dans", "de", "debout",
+        "dedans", "derrière", "des", "devant", "dont", "du", "déjà", "elle", "elles", "en", "encore", "ensuite",
+        "entre", "est", "et", "ici", "il", "il fait", "il y a", "ils", "j'ai", "je", "l'", "la", "le", "les", "ma",
+        "mais", "mes", "moins", "mon", "même", "ne … jamais", "ne … pas", "ne … plus", "non", "nous", "on", "ou", "oui",
+        "où", "par", "peut-être", "plus", "pour", "près", "près de", "puis", "quand", "que", "quel", "quelle", "qui",
+        "quoi", "sa", "sans", "ses", "si", "son", "soudain", "sous", "sur", "ta", "tard", "tes", "ton", "toujours",
+        "tout", "trop", "très", "tu", "tôt", "un", "une", "vers", "voici", "voilà", "vous", "y"].sample(8)
+
       erb :mots
     end
   end

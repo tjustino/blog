@@ -1,10 +1,9 @@
-<h2>Mots outils</h2>
+<h2>Mots outils 🦄</h2>
 
 <ol>
-  <li><%= @set1 %></li>
-  <li><%= @set2 %></li>
-  <li><%= @set3 %></li>
-  <li><%= @set4 %></li>
+  <% @mots_outils.each do |mot_outil| %>
+    <li><%= mot_outil %></li>
+  <% end %>
 </ol>
 
 <form action="/mots" method="get">
