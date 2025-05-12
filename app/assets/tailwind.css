@@ -18,7 +18,7 @@
   }
 
   main button {
-    @apply w-full cursor-pointer text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l font-medium rounded-lg p-4 text-center;
+    @apply w-full cursor-pointer text-white bg-purple-500 hover:bg-purple-600 font-medium rounded-lg p-4 text-center;
   }
 
   main h1 {
